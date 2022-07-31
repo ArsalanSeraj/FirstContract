@@ -4,10 +4,7 @@ const Web3 = require("web3");
 
 const { interface, bytecode } = require("./compile");
 
-const provider = new HDWalletProvider(
-  "increase few matter sudden amatuer client retreat bread fuel demand biology lens",
-  " https://rinkeby.infura.io/v3/946be525760b46698a5694f81fe6bc34"
-);
+const provider = new HDWalletProvider("mnemonic", "infura");
 const web3 = Web3(provider);
 const deploy = async () => {
   const accounts = await web3.eth.getAccounts();
